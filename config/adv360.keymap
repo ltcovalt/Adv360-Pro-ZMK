@@ -39,7 +39,7 @@
         default_layer {
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                                 &mo 3         &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &none                                                                  &none         &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tog 5                                                                 &none         &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &none           &kp LCTRL        &kp LALT      &kp LGUI   &kp RCTRL    &none         &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                                    &kp HOME      &kp PG_UP                             &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
 &mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp LEFT_SHIFT  &lt 4 BACKSPACE  &kp END       &kp PG_DN  &lt 4 SPACE  &kp KP_ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 2
@@ -89,10 +89,10 @@
         Gaming {
             bindings = <
 &trans  &trans     &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp Q   &kp W   &kp E   &kp R   &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp I      &kp Q   &kp W   &kp E   &kp R   &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LSHFT  &kp A   &kp S   &kp D   &kp F   &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp Z   &kp X   &kp C   &kp V                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp T   &kp G   &kp B           &trans  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &kp M      &kp Z   &kp X   &kp C   &kp V                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp T   &kp G   &kp B           &mo 4   &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
