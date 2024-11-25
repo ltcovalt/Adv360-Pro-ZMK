@@ -64,11 +64,11 @@
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 3                                      &mo 4   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F5  &kp F5  &tog 3                                      &mo 4   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
             >;
         };
 
@@ -95,8 +95,8 @@
         Nav+Symbols {
             bindings = <
 &trans        &kp EXCLAMATION  &kp AT_SIGN    &kp POUND  &kp DOLLAR  &kp PERCENT           &trans                                      &trans  &kp CARET              &kp AMPERSAND   &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&trans        &trans           &kp BACKSPACE  &kp UP     &kp DELETE  &kp LEFT_BRACKET      &trans                                      &trans  &kp RIGHT_BRACKET      &kp GRAVE       &kp PLUS       &kp PIPE              &kp COLON              &trans
-&kp LEFT_GUI  &kp LEFT_SHIFT   &kp LEFT       &kp DOWN   &kp RIGHT   &kp LEFT_PARENTHESIS  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL      &trans                &trans                 &trans
+&trans        &trans           &kp BACKSPACE  &kp UP     &kp DELETE  &kp LEFT_BRACKET      &trans                                      &trans  &kp RIGHT_BRACKET      &kp GRAVE       &kp PLUS       &kp PIPE              &kp COLON              &kp PIPE
+&kp LEFT_GUI  &kp LEFT_SHIFT   &kp LEFT       &kp DOWN   &kp RIGHT   &kp LEFT_PARENTHESIS  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL      &kp BACKSLASH         &kp SEMI               &kp DOUBLE_QUOTES
 &trans        &trans           &trans         &kp HOME   &kp END     &kp LEFT_BRACE                        &trans      &trans                  &kp RIGHT_BRACE        &kp UNDERSCORE  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
 &trans        &trans           &trans         &trans     &trans                            &trans  &trans  &trans      &trans  &trans  &trans                         &trans          &trans         &trans                &trans                 &trans
             >;
