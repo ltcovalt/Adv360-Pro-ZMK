@@ -24,30 +24,30 @@
 
         #endif
 
-        hmr: hmr {
+        hrmr: hrmr {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
+            label = "HRMR";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <50>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 46 47 48 49 50 51 60 61 62 63 64>;
         };
 
-        hml: hml {
+        hrml: hrml {
             compatible = "zmk,behavior-hold-tap";
-            label = "HML";
+            label = "HRML";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <50>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75>;
         };
@@ -80,11 +80,11 @@
 
         default {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none                                                                        &none        &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp B   &none                                                                        &none        &kp J   &kp L   &kp U      &kp Y     &kp SQT   &kp BSLH
-&kp ESC    &kp A   &kp R   &kp S   &kp T   &kp G   &none                &mo 4            &kp LGUI       &kp RGUI   &mo 4        &none        &kp M   &kp N   &kp E      &kp I     &kp O     &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C   &kp D   &kp V                                         &kp LALT       &kp RALT                             &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
-&none      &none   &none   &none   &none           &mth LEFT_SHIFT TAB  &lt 3 BACKSPACE  &kp LCTRL      &kp RCTRL  &lt 3 SPACE  &lt 2 ENTER          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &none
+&kp GRAVE  &kp N1         &kp N2        &kp N3        &kp N4  &kp N5  &none                                                                        &none        &kp N6  &kp N7  &kp N8            &kp N9          &kp N0             &kp MINUS
+&kp TAB    &kp Q          &kp W         &kp F         &kp P   &kp B   &none                                                                        &none        &kp J   &kp L   &kp U             &kp Y           &kp SQT            &kp BSLH
+&kp ESC    &kp A          &kp R         &kp S         &kp T   &kp G   &none                &mo 4            &kp LGUI       &kp RGUI   &mo 4        &none        &kp M   &kp N   &kp E             &kp I           &kp O              &kp SQT
+&kp LSHFT  &hrml LCTRL Z  &hrml LALT X  &hrml LGUI C  &kp D   &kp V                                         &kp LALT       &kp RALT                             &kp K   &kp H   &hrmr RGUI COMMA  &hrmr RALT DOT  &hrmr RCTRL SLASH  &kp ENTER
+&none      &none          &none         &none         &none           &mth LEFT_SHIFT TAB  &lt 3 BACKSPACE  &kp LCTRL      &kp RCTRL  &lt 3 SPACE  &lt 2 ENTER          &kp UP  &kp DOWN          &kp LBKT        &kp RBKT           &none
             >;
 
             label = "default";
